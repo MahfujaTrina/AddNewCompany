@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.HeadOfSupplyChainOptimizeInventoryController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnClick" style="-fx-background-color: blue;" text="&lt;&lt;" textFill="WHITE" />
+      <Label layoutX="40.0" layoutY="66.0" prefHeight="32.0" prefWidth="191.0" text="Optimize Inventory" textFill="#1100ff">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="92.0" layoutX="139.0" layoutY="98.0" startX="-100.0" />
+      <Text layoutX="40.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spare parts:" />
+      <Text layoutX="40.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eqquipment:" />
+      <Text layoutX="40.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplies:" />
+      <ComboBox fx:id="sparePartsComboBox" layoutX="128.0" layoutY="128.0" prefWidth="150.0" />
+      <ComboBox fx:id="eqquipmentComboBox" layoutX="128.0" layoutY="167.0" prefWidth="150.0" />
+      <ComboBox fx:id="suppliesComboBox" layoutX="128.0" layoutY="205.0" prefWidth="150.0" />
+      <Button layoutX="128.0" layoutY="244.0" mnemonicParsing="false" onAction="#AddButtonOnClick" text="Add" />
+      <TableView fx:id="OptimizeInventoryTable" layoutX="128.0" layoutY="285.0" prefHeight="188.0" prefWidth="488.0">
+        <columns>
+          <TableColumn fx:id="SparePaertsColumn" prefWidth="128.0" text="Spare Paerts" />
+          <TableColumn fx:id="eqquipmentColumn" prefWidth="162.0" text="Eqquipment" />
+            <TableColumn fx:id="soppliesColumn" prefWidth="197.0" text="Supplies" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

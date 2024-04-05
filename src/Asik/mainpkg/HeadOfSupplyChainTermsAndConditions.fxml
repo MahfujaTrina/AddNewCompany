@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.HeadOfSupplyChainTermsAndConditionsController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnClick" style="-fx-background-color: blue;" text="&lt;&lt;" textFill="WHITE" />
+      <Label layoutX="40.0" layoutY="66.0" prefHeight="32.0" prefWidth="206.0" text="Terms And conditions" textFill="#1100ff">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="107.0" layoutX="139.0" layoutY="98.0" startX="-100.0" />
+      <TextArea layoutX="40.0" layoutY="112.0" prefHeight="260.0" prefWidth="715.0" text="Our Aviation company, specializing in helicopter services, meticulously operates within a robust supply chain &#10;governed by precise terms and conditions. Helicopter procurement involves agreements detailing specifications,&#10;warranties, and maintenance protocols. Fuel procurement contracts ensure timely delivery and uphold quality &#10;standards. Safety remains paramount with maintenance SLAs,crew management agreements, and strict compliance&#10;with aviation regulations. Passenger satisfaction is ensured through customer-centric terms governing ticketing,&#10;safety briefings, and efficient baggage handling. Comprehensive insurance policies cover aircraft and passenger&#10;liabilities, while contractual agreements define charter services and loyalty programs. Environmental compliance&#10;includes adherence to emissions regulations and sustainability initiatives. Data security measures protect passenger&#10;information, ensuring compliance with privacy laws. Through these terms and conditions, we prioritize efficiency,&#10;safety, and customer satisfaction in our helicopter operations, guaranteeing a reliable and trusted service for all&#10;stakeholders involved.">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
