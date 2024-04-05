@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Helicopter_Aviation_Company.jnlp">
+  <information>
+    <title>Helicopter_Aviation_Company</title>
+    <vendor>Trina</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Helicopter_Aviation_Company.jar" size="4559" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="helicopter_aviation_company.Main"  name="Helicopter_Aviation_Company" />
+  <update check="always"/>
+</jnlp>
