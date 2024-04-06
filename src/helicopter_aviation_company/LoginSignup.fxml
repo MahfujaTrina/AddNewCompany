@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helicopter_aviation_company.LoginSignupController">
-    <children>
-      <Button fx:id="loginButton" layoutX="270.0" layoutY="155.0" mnemonicParsing="false" onAction="#loginButtonAction" text="Log In" />
-      <Button fx:id="signupButton" layoutX="270.0" layoutY="205.0" mnemonicParsing="false" onAction="#signupButtonAction" text="Sign Up" />
+<AnchorPane id="AnchorPane" prefHeight="392.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helicopter_aviation_company.LoginSignupController">
+   <children>
+      <Button defaultButton="true" layoutX="119.0" layoutY="187.0" mnemonicParsing="false" onAction="#loginClicked" prefHeight="58.0" prefWidth="141.0" text="Login">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="349.0" layoutY="187.0" mnemonicParsing="false" onAction="#signupClicked" prefHeight="58.0" prefWidth="131.0" text="Signup">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Label layoutX="48.0" layoutY="45.0" text="Helicopter Aviation Managment LTD" textFill="#2b00ff">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

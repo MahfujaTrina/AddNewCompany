@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Helicopter_Aviation_Company.jar" size="4559" download="eager" />
+    <jar href="Helicopter_Aviation_Company.jar" size="9206" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="helicopter_aviation_company.Main"  name="Helicopter_Aviation_Company" />
   <update check="always"/>

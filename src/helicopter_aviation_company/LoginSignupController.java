@@ -1,30 +1,39 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package helicopter_aviation_company;
+
+
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 
 public class LoginSignupController {
 
     @FXML
-    private Button loginButton;
-
-    @FXML
-    private Button signupButton;
-
-    @FXML
-    void loginButtonAction(ActionEvent event) {
-        // Add your login logic here
-        System.out.println("Login button clicked");
+    private void loginClicked(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("LoginPage.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void signupButtonAction(ActionEvent event) {
-        // Add your signup logic here
-        System.out.println("Signup button clicked");
+    private void signupClicked(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Signup.fxml"));
+        Parent root = loader.load();
+
+        Scene scene = new Scene(root);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
+        stage.show();
     }
 }
+
+    

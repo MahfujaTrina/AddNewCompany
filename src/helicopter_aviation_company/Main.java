@@ -1,4 +1,8 @@
-package helicopter_aviation_company;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXML.java to edit this template
+ */
+package helicopter_aviation_company ;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,30 +10,27 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
+/**
+ *
+ * @author Lenovo
+ */
 public class Main extends Application {
-
-    private static Stage primaryStage;
-
+    
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        Main.primaryStage = primaryStage;
-        setScene("LoginSignup.fxml");
-        primaryStage.setTitle("Login/Signup");
-        primaryStage.show();
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("/helicopter_aviation_company/LoginSignup.fxml"));
+        
+        Scene scene = new Scene(root);
+        
+        stage.setScene(scene);
+        stage.show();
     }
 
-    public static void setScene(String fxmlFile) {
-        try {
-            Parent root = FXMLLoader.load(Main.class.getResource(fxmlFile));
-            primaryStage.setScene(new Scene(root, 600, 400));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         launch(args);
     }
+    
 }
