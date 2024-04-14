@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kalpika.CollaborationsController">
+    
+    <!-- Labels and Descriptions for Collaboration Metrics -->
+    <Label fx:id="sharedFlightsLabel" layoutX="624.0" layoutY="220.0" text="100%" />
+    <Label layoutX="14.0" layoutY="220.0" prefHeight="21.0" prefWidth="419.0" text="Shared Flights: Represents the percentage of shared flights " />
+    
+    <Label fx:id="codeshareAgreementsLabel" layoutX="739.0" layoutY="261.0" text="100%" />
+    <Label layoutX="13.0" layoutY="261.0" text="Codeshare Agreements: Represents the percentage of codeshare agreements." />
+
+    <Label fx:id="jointMarketingLabel" layoutX="707.0" layoutY="305.0" text="100%" />
+    <Label layoutX="13.0" layoutY="305.0" text="Joint Marketing: Represents the percentage of joint marketing efforts." />
+    
+    <Label fx:id="expensesByPartnerLabel" layoutX="689.0" layoutY="355.0" text="100%" />
+    <Label layoutX="16.0" layoutY="355.0" text="Expenses by Partner: Represents the expenses incurred with partners." />
+    
+    <Label fx:id="totalExpensesLabel" layoutX="655.0" layoutY="404.0" text="100%" />
+    <Label layoutX="14.0" layoutY="404.0" text="Total Expenses: Represents the total expenses in collaborations." />
+
+    <Label fx:id="roiLabel" layoutX="643.0" layoutY="449.0" text="100%" />
+    <Label layoutX="11.0" layoutY="449.0" text="ROI on Collaborations: RSeturn on investment for collaborations." />
+
+    <!-- TextFields for User Input -->
+    <TextField fx:id="sharedFlightsInput" layoutX="426.0" layoutY="215.0" promptText="Enter %" />
+    <TextField fx:id="codeshareAgreementsInput" layoutX="538.0" layoutY="256.0" promptText="Enter %" />
+    <TextField fx:id="jointMarketingInput" layoutX="493.0" layoutY="300.0" promptText="Enter %" />
+    <TextField fx:id="expensesByPartnerInput" layoutX="486.0" layoutY="350.0" promptText="Enter %" />
+    <TextField fx:id="totalExpensesInput" layoutX="445.0" layoutY="399.0" promptText="Enter %" />
+    <TextField fx:id="roiInput" layoutX="445.0" layoutY="444.0" promptText="Enter %" />
+
+    <!-- Update and Back buttons -->
+    <Button fx:id="updateButton" layoutX="417.0" layoutY="516.0" onAction="#updatePercentages" text="Update" />
+    <Button fx:id="backButton" defaultButton="true" layoutX="808.0" layoutY="547.0" onAction="#goBack" text="Back" />
+   <Label layoutX="301.0" layoutY="48.0" prefHeight="81.0" prefWidth="386.0" text="Collaborations" textFill="#0900ff">
+      <font>
+         <Font size="54.0" />
+      </font>
+   </Label>
+   <Label layoutX="17.0" layoutY="136.0" prefHeight="35.0" prefWidth="178.0" text="Last year Data">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+    
+</AnchorPane>

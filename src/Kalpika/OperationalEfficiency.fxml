@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="738.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kalpika.OperationalEfficiencyController">
+    <children>
+        <Button fx:id="backButton" defaultButton="true" layoutX="668.0" layoutY="676.0" onAction="#backToDashboard" text="Back " />
+        
+        <!-- Automation Button -->
+        <Button fx:id="automationButton" layoutX="626.0" layoutY="254.0" onAction="#displayAutomationInfo" prefHeight="80.0" prefWidth="122.0" text=" Info" />
+        
+        <!-- Label to display maintenance information -->
+        <Label fx:id="automationInfoLabel" layoutY="144.0" prefWidth="572.0" wrapText="true" />
+        
+        <Label layoutX="138.0" layoutY="28.0" text="Operational Efficiency" textFill="#0429ff">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        
+        <Label layoutX="476.0" layoutY="210.0" text="To see operational efficiency press here">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
