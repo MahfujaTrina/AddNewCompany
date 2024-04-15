@@ -89,7 +89,7 @@ public class LoginPageController {
         } else if (jobTitle.equals("GM")) {
             dashboardPath = "/Kalpika/GMDashboard.fxml";
         } else if (jobTitle.equals("Aviation CEO")) {
-            dashboardPath = "/Kalpika/CEODashboard.fxml";
+            dashboardPath = "/Kalpika/AvCEO Dashboard.fxml";
         } else if (jobTitle.equals("Accounts Officer")) {
             dashboardPath = "/Mahfuja/AccountantDashboard.fxml";
         }

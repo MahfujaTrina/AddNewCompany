@@ -12,6 +12,8 @@ import javafx.scene.Scene;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FinancialPerformanceController {
 
@@ -77,11 +79,12 @@ public class FinancialPerformanceController {
 
     private void saveFinancialData(ObservableList<String> data, String fileName) {
         try {
+            List<String> dataList = new ArrayList<>(data);
             FileOutputStream fos = new FileOutputStream(fileName);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
-            // Write the ObservableList to the ObjectOutputStream
-            oos.writeObject(data);
+            // Write the List<String> to the ObjectOutputStream
+            oos.writeObject(dataList);
 
             oos.close();
             fos.close();

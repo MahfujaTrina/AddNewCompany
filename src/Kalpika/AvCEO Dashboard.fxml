@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="535.0" prefWidth="631.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Kalpika.AvCEODashboardController">
+
+    <Button fx:id="recruitmentButton" layoutX="20" layoutY="20" onAction="#openRecruitment" text="Recruitment" />
+    <Button fx:id="strategicInitiativesButton" layoutX="20" layoutY="60" onAction="#openStrategicInitiatives" text="Strategic Initiatives" />
+    <Button fx:id="environmentalMetricsButton" layoutX="20" layoutY="100" onAction="#openEnvironmentalMetrics" text="Environmental Metrics" />
+    <Button fx:id="flightManagementButton" layoutX="20" layoutY="140" onAction="#openFlightManagement" text="Flight Management" />
+    <Button fx:id="businessOperationsButton" layoutX="20" layoutY="180" onAction="#openBusinessOperations" text="Business Operations" />
+    <Button fx:id="riskManagementButton" layoutX="20" layoutY="220" onAction="#openRiskManagement" text="Risk Management" />
+    <Button fx:id="operationMetricsButton" layoutX="20" layoutY="260" onAction="#openOperationMetrics" text="Operation Metrics" />
+    <Button fx:id="stakeholdersEngagementButton" layoutX="20" layoutY="300" onAction="#openStakeholdersEngagement" text="Stakeholders Engagement" />
+    
+    <Button fx:id="backButton" layoutX="492.0" layoutY="466.0" onAction="#backToLogin" text="Back to Login" />
+    
+</AnchorPane>
